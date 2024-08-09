@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello!Pls try out my new calculator</title>
+    <link rel=stylesheet href=style css>
+<div id="nav">
+  <a href="amazing.html">home</a>
+|  
+  <a href="cute.html">my app</a>
+|  
+  <a href="beauty.html">contact</a> 
+    <marquee bgcolor="#ff78ee">Pls try my new calculator</marquee>
+  
+    <script>
+    function calculateAge(event){
+      event.preventDefault();
+      alert("It is processing please wait");
+      var dob = document.getElementById("dob").value;
+      var cuy = document.getElementById("cuy").value;
+      var age="new Date().getFullYear()-dob";
+      var age=cuy-dob
+      alert("My amazing age is:"+age);
+      //document.getElementById("result").innerHTML="Your age is:+ age +"years old";
+    }
+     
+      </script>
+</div>  
+</head>
+<body bgcolor="#ff78ea">
+  <h4>Calculate age</h4>
+  <form onsubmit="calculateAge(event)">
+    <label for="name">Date of Birth(YEAR):</label>  
+    <input type="number" id="dob" name="dob" min="1960"max=2022"required>
+    <label for="name">Current Year(AGE):</label>  
+    <input type="number" id="cuy" name="cuy" max="2024" required>
+   
+    <input type="submit" value="CalculateAge">
+<div id="result"></div>
+  </form>  
+</body>
+</html>
